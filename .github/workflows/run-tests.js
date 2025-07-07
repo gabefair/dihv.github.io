@@ -176,7 +176,9 @@ async function runAllTests() {
     await new Promise(resolve => setTimeout(resolve, 2000));
 
     // Launch Puppeteer
-    browser = await puppeteer.launch();
+    browser = await puppeteer.launch({
+        args: ['--no-sandbox', '--disable-setuid-sandbox']
+    });
 
     // Run all test cases
     await testMainPage();
