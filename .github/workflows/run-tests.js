@@ -1,3 +1,5 @@
+// .github/workflows/run-tests.js
+
 const puppeteer = require('puppeteer');
 const { spawn } = require('child_process');
 const path = require('path');
@@ -78,7 +80,8 @@ async function test404Page(page) {
 
 async function runAllTests() {
     try {
-        server = spawn('npx', ['http-server', '-p', port, '-c-1']); // Disable caching
+        // Correctly configure http-server to use the 404.html page for any 404 error.
+        server = spawn('npx', ['http-server', '-p', port, '-c-1', '--proxy', `http://localhost:${port}/404.html`]);
         console.log('Started server...');
         await new Promise(resolve => setTimeout(resolve, 3000));
 
