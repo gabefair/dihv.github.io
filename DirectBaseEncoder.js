@@ -142,7 +142,7 @@ class DirectBaseEncoder {
             const bytesInChunk = Math.min(this.BYTES_PER_CHUNK, remainingBytes);
             const bitsInChunk = bytesInChunk * 8;
             const charsInChunk = Math.ceil(bitsInChunk / this.BITS_PER_CHAR);
-            const encodedChunk = encodedStr.substr(dataCursor, charsInChunk);
+            const encodedChunk = encodedStr.substring(dataCursor, dataCursor + charsInChunk);
             dataCursor += charsInChunk;
             const mixed = this.decodeChunk(encodedChunk, bytesInChunk);
             const chunk = this.demixWithEntropy(mixed, byteOffset);
