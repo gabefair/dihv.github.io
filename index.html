@@ -81,9 +81,9 @@
 
   <!-- Core Infrastructure Scripts (order matters!) -->
   <script src="config.js"></script>
-  <script src="EventBus.js"></script>
-  <script src="SharedUtils.js"></script>
-  <script src="ConfigValidator.js"></script>
+  <script src="EventBus.js" defer></script>
+  <script src="SharedUtils.js" defer></script>
+  <script src="ConfigValidator.js" defer></script>
   
   <!-- Debug Manager (early loading for maximum coverage) -->
   <script>
@@ -106,9 +106,9 @@
   </script>
   
   <!-- System Management and Error Handling -->
-  <script src="ErrorHandler.js"></script>
-  <script src="ResourcePool.js"></script>
-  <script src="UnifiedPerformanceMonitor.js"></script>
+  <script src="ErrorHandler.js" defer></script>
+  <script src="ResourcePool.js" defer></script>
+  <script src="UnifiedPerformanceMonitor.js" defer></script>
   
   <!-- Debug Manager (load early to catch issues) -->
   <script>
@@ -176,13 +176,13 @@
   </script>
   
   <!-- Processing Components -->
-  <script src="WebGLManager.js"></script>
-  <script src="DirectBaseEncoder.js"></script>
-  <script src="BitStreamEncoder.js"></script>
-  <script src="ImageAnalyzer.js"></script>
-  <script src="compressionEngine.js"></script>
-  <script src="imageProcessor.js"></script>
-  <script src="imageViewer.js"></script>
+  <script src="WebGLManager.js" defer></script>
+  <script src="DirectBaseEncoder.js" defer></script>
+  <script src="BitStreamEncoder.js" defer></script>
+  <script src="ImageAnalyzer.js" defer></script>
+  <script src="compressionEngine.js" defer></script>
+  <script src="imageProcessor.js" defer></script>
+  <script src="imageViewer.js" defer></script>
   
   <!-- Enhanced System Manager (load after all components) -->
   <script>
