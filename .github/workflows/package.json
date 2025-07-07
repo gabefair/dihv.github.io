@@ -1,0 +1,24 @@
+{
+  "name": "dihv",
+  "version": "1.0.0",
+  "description": "Image hosting via URL path encoding.",
+  "main": "imageProcessor.js",
+  "scripts": {
+    "test": "node .github/workflows/run-tests.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabefair/dihv.github.io.git"
+  },
+  "author": "Gabe Fair",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gabefair/dihv.github.io/issues"
+  },
+  "homepage": "https://github.com/gabefair/dihv.github.io#readme",
+  "devDependencies": {
+    "gl": "^4.9.0",
+    "glob": "^8.1.0",
+    "jsdom": "^22.1.0"
+  }
+}
